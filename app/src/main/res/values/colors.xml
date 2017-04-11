@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FA8072</color>
+    <color name="colorPrimaryDark">#CD5C5C</color>
+    <color name="colorAccent">#F08080</color>
+    <color name="input_register_bg">#303F</color>
+    <color name="input_register">#333</color>
+    <color name="input_register_hint">#3422</color>
+    <color name="bg_register">#3422</color>
+    <color name="input_login">#333</color>
+    <color name="input_login_bg">#5949</color>
+    <color name="input_login_hint">#3422</color>
+    <color name="bg_login">#835</color>
+    <color name="grey">#4425</color>
+    <color name="light_purple">#DA7DD4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="like">#DA8D</color>
+    <color name="textColor">#333</color>
+    <drawable name="touchFeedback">#CFD8DC</drawable>
+    <color name="lineColor">#12000000</color>
+
+</resources>

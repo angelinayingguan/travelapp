@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="com.esri.android.nearbyplaces.CameraActivity"
+    android:orientation="vertical"
+    android:background="@drawable/travelp">
+
+<Button
+    android:id="@+id/btnTakePic"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/btnshape2"
+    android:textColor="#FFFAF0"
+    android:text="Camera!" />
+
+    <Button
+        android:id="@+id/btnrec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="415dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btnshape2"
+        android:textColor="#FFFAF0"
+        android:text="Recognize!" />
+</LinearLayout>
