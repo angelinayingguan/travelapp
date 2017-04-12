@@ -18,5 +18,8 @@
     <color name="textColor">#333</color>
     <drawable name="touchFeedback">#CFD8DC</drawable>
     <color name="lineColor">#12000000</color>
-
+    <color name="secondaryText">#727272</color>
+    <color name="lightGray">#d3d3d3</color>
+    <color name="background">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>

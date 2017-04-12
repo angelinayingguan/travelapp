@@ -5,7 +5,14 @@
     <string name="route_view">Route</string>
     <string name="filter">Filter</string>
     <!-- Service URLs -->
-
+    <string name="error_getting_events">Sorry, there was an error getting the events close to you :(</string>
+    <string name="getting_events">Fetching events...</string>
+    <string name="menu_search">Search</string>
+    <string name="no_results_for_that_location">We couldn\'t find any event close to you :(</string>
+    <string name="please_enter_a_valid_search_term">Please, write a valid search term</string>
+    <string name="home_tell_us_what_you_are_looking_for">Tap on the magnifier to search for events</string>
+    <string name="paid">Paid</string>
+    <string name="free">Free</string>
     <string name="app_id">1638247356482080</string>
     <string name="title_activity_display_menu">Today\'s Menu</string>
     <string name="title_activity_display_lunch">"Today's Lunch "</string>
@@ -70,5 +77,6 @@
     <string name="nearby_places">Nearby Places</string>
     <string name="map_fragment">map fragment</string>
     <string name="route_fragment">route fragment</string>
+    <string name="title_activity_events2">EventsActivity2</string>
 
 </resources>

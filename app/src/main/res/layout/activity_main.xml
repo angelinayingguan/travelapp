@@ -20,7 +20,7 @@
 
 
     <Button
-        android:text="Activities Around:)"
+        android:text="Places Nearby:)"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/b1"
@@ -34,7 +34,7 @@
         android:textAllCaps="false"
         />
     <Button
-        android:text="Indoor Location"
+        android:text="Events Nearby:)"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:id="@+id/b5"
