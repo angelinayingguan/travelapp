@@ -41,7 +41,7 @@
         </activity>
         <activity
             android:name=".places.PlacesActivity"
-            android:configChanges="orientation|screenSize"></activity>
+            android:configChanges="orientation|screenSize" />
         <activity
             android:name=".RegisterActivity"
             android:label="@string/title_activity_register" />
@@ -69,7 +69,29 @@
         <activity
             android:name=".events.ui.activity.EventsActivity"
             android:label="@string/title_activity_events2"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SetUp"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".SpliterActivity"
+            android:label="SpliterActivity"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".FoodToPeople"
+            android:label="FoodToPeople"
+            android:theme="@style/AppTheme"  >
+        </activity>
+        <activity
+            android:name=".UserSummary"
+            android:label="@string/title_activity_user_summary" >
+        </activity>
+
+
     </application>
 
 </manifest>

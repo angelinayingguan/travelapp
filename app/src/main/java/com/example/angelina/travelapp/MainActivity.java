@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.angelina.travelapp.events.ui.activity.EventsActivity;
 import com.example.angelina.travelapp.places.PlacesActivity;
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
         buttonc.setOnClickListener(new View.OnClickListener(){
             public void onClick(View arg0){
-                Intent startNewPage= new Intent(MainActivity.this, EventsActivity.class);
+                Intent startNewPage= new Intent(MainActivity.this, SetUp.class);
                 startActivity (startNewPage);
             }
 

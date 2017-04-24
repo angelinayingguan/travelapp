@@ -1,0 +1,71 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:id="@+id/layout"
+    android:background="@drawable/pinkpurple">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true" >
+
+        <TextView
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:id="@+id/nameTitle"
+            android:text="Name:"
+            android:layout_weight="0.19"
+            android:layout_gravity = "left"
+            android:textAlignment="center"
+            android:gravity="center_vertical" />
+
+        <EditText
+            android:layout_width="190dp"
+            android:layout_height="40dp"
+            android:id="@+id/nameText"
+            android:layout_weight="0.42"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/list_person"
+        android:layout_width="fill_parent"
+        android:layout_height="327dp"
+        android:layout_weight="0.89">
+    </ListView>
+
+    <Button
+        android:id="@+id/addPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:tint="@android:color/white"
+        android:layout_margin="@dimen/fab_margin"
+        android:text="Add Member!"
+        android:src="@android:drawable/ic_input_add"
+        android:onClick="addPerson" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Split"
+        android:id="@+id/split_button"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToMain"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back"
+        android:id="@+id/gbm"
+        android:layout_gravity="center_horizontal"
+        android:onClick="B"
+        />
+
+</LinearLayout>

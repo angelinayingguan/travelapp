@@ -121,7 +121,9 @@ public class EventsActivity extends AppCompatActivity implements SearchView.OnQu
     private void getEvents(String query) {
         Snackbar.make(coordinatorLayout, R.string.getting_events, Snackbar.LENGTH_SHORT).show();
         CallId getEventsCallId = new CallId(CallOrigin.HOME, CallType.GET_EVENTS);
-        eventbriteApi.getEvents(query, getShorterCoordinate(location.getLatitude()), getShorterCoordinate(location.getLongitude()), lastPageLoaded, getEventsCallId, generateGetEventsCallback());
+        if(location !=null) {
+            eventbriteApi.getEvents(query, getShorterCoordinate(location.getLatitude()), getShorterCoordinate(location.getLongitude()), lastPageLoaded, getEventsCallId, generateGetEventsCallback());
+        }
         PreferencesHelper.setLastSearch(query);
     }
 

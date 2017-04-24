@@ -1,0 +1,73 @@
+package com.example.angelina.travelapp;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+
+
+public class SplitItem implements Serializable{
+    private String name;
+    private double price;
+    private boolean isLiquor;
+
+
+    private ArrayList<Person> participants = new ArrayList<>();
+    private double costPerPerson;
+
+    public SplitItem(String name, double price, boolean isLiquor) {
+        this.name = name;
+        this.price = price;
+        costPerPerson = price;
+        this.isLiquor = isLiquor;
+    }
+    public void addParticipant(Person person) {
+        participants.add(person);
+        costPerPerson = price / participants.size();
+    }
+
+    public void removeParticipant(Person person) {
+        participants.remove(person);
+        if(participants.size() == 0) {
+            costPerPerson = price;
+        } else {
+            costPerPerson = price / participants.size();
+        }
+    }
+
+    public ArrayList<Person> getParticipants() {
+        return participants;
+    }
+
+    public double getTotalCost() {
+        return price;
+    }
+
+    public double getCostPerPerson() {
+        return costPerPerson;
+    }
+
+    //for tax
+    public double recalculateCostPerPerson() {
+        costPerPerson = price/participants.size();
+        return costPerPerson;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public boolean getIsLiquor() {
+        return isLiquor;
+    }
+}

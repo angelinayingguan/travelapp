@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.angelina.travelapp.SpliterActivity"
+    android:clipChildren="false"
+    android:background="@drawable/pinkpurple"
+    android:id="@+id/relativeLayout1">
+
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="300dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:clipChildren="false"-->
+    <!--android:background="#0000"-->
+    <!--android:layout_centerInParent="true">-->
+
+    <com.example.angelina.travelapp.CircleLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000"
+        app:angleOffset="90.0"
+        android:id="@+id/circleLayout"
+        android:layout_gravity="fill"
+        android:clipChildren="false"
+        >
+
+        <!-- Add here any views you want -->
+
+    </com.example.angelina.travelapp.CircleLayout>
+
+    <!--</RelativeLayout>-->
+
+
+    <!--<ImageView-->
+    <!--android:id="@+id/plate_icon"-->
+    <!--android:src="@mipmap/plate_icon"-->
+    <!--android:layout_width="140dp"-->
+    <!--android:layout_height="140dp"-->
+    <!--android:layout_centerInParent="true"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="15dp"
+        >
+
+        <Button
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:tint="@android:color/white"
+            android:text="Add Transaction!"
+            android:src="@android:drawable/ic_input_add"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Items"
+            android:id="@+id/viewItemsButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="15dp"
+            android:onClick="viewItems" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/itemNameTextView"
+            android:textColor="#000000"
+            android:layout_marginBottom="95dp"
+            android:layout_above="@+id/viewItemsButton"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate Tax"
+            android:id="@+id/taxButton"
+            android:onClick="viewItems"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalPrice"
+            android:layout_alignBaseline="@+id/taxButton"
+            android:layout_alignBottom="@+id/taxButton"
+            android:layout_alignStart="@+id/viewItemsButton" />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
