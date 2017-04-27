@@ -6,7 +6,7 @@
     android:orientation="vertical"
     tools:context="com.example.angelina.travelapp.SpliterActivity"
     android:clipChildren="false"
-    android:background="@drawable/pinkpurple"
+    android:background="@drawable/bling"
     android:id="@+id/relativeLayout1">
 
 
@@ -86,7 +86,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Calculate Tax"
+            android:text="Calculate Tips"
             android:id="@+id/taxButton"
             android:onClick="viewItems"
             android:layout_alignParentTop="true"
