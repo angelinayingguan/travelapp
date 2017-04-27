@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Enter tax percentage:"
+        android:text="Enter Gratuity Level:"
         android:id="@+id/textView2"
         android:layout_marginTop="10dp" />
 
@@ -41,7 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Enter liquor tax percentage:"
+        android:text="Enter Tax percentage:"
         android:id="@+id/liquorTaxView" />
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"

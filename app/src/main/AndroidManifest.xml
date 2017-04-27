@@ -79,7 +79,7 @@
         <activity
             android:name=".SpliterActivity"
             android:label="SpliterActivity"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme">
         </activity>
         <activity
             android:name=".FoodToPeople"
