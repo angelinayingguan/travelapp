@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
         @Override
         public void onSuccess(LoginResult loginResult) {
 
-            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+            Intent i = new Intent(LoginActivity.this, SetUp.class);
             startActivity(i);
         }
 
@@ -103,7 +103,7 @@ public class LoginActivity extends AppCompatActivity {
         } else if (password.equals("nonono")) {
             email.setError("Email not registered");
         } else if (strpass.equals(password)) {
-            Intent i = new Intent(LoginActivity.this, MainActivity.class);
+            Intent i = new Intent(LoginActivity.this, SetUp.class);
             i.putExtra("email", str);
             startActivity(i);
         } else {

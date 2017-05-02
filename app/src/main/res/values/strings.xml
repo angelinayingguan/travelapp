@@ -88,5 +88,6 @@
     <string name="route_fragment">route fragment</string>
     <string name="title_activity_events2">EventsActivity2</string>
     <string name="title_activity_spliter">SpliterActivity</string>
+    <string name="title_activity_server">server</string>
 
 </resources>

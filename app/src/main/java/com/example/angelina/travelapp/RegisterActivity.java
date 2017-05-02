@@ -143,7 +143,7 @@ public class RegisterActivity extends ActionBarActivity {
             c.setPass(passstr);
 
             helper.insertContact(c);
-            Intent i = new Intent(RegisterActivity.this, MainActivity.class);
+            Intent i = new Intent(RegisterActivity.this, SetUp.class);
             startActivity(i);
         }
     }}

@@ -7,30 +7,32 @@
     android:orientation="vertical"
     android:weightSum="1"
     android:id="@+id/layout"
-    android:background="@drawable/ssp">
+    android:background="@drawable/another">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:focusableInTouchMode="true" >
+        android:focusableInTouchMode="true"
+        android:weightSum="1">
 
         <TextView
-            android:layout_width="59dp"
+            android:layout_width="127dp"
             android:layout_height="match_parent"
             android:id="@+id/nameTitle"
             android:text="Name:"
-            android:layout_weight="0.19"
             android:layout_gravity = "left"
             android:textSize="30dp"
-            android:textStyle="italic"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
             android:textAlignment="center"
             android:gravity="center_vertical" />
 
         <EditText
-            android:layout_width="190dp"
+            android:layout_width="192dp"
             android:layout_height="40dp"
             android:id="@+id/nameText"
-            android:layout_weight="0.42"
-            android:singleLine="true"/>
+            android:hint="Enter new member's name"
+            android:singleLine="true"
+            android:layout_weight="7.87" />
     </LinearLayout>
 
 
@@ -38,42 +40,41 @@
     <ListView
         android:id="@+id/list_person"
         android:layout_width="fill_parent"
-        android:layout_height="327dp"
-        android:layout_weight="0.89">
+        android:layout_height="319dp"
+        android:layout_weight="0.20">
     </ListView>
 
     <android.widget.Button
         android:id="@+id/addPerson"
-        android:layout_width="67dp"
-        android:layout_height="37dp"
+        android:layout_width="95dp"
+        android:layout_height="33dp"
         android:tint="@android:color/white"
         android:layout_margin="@dimen/fab_margin"
         android:background="@drawable/ap"
         android:layout_gravity="center"
         android:src="@android:drawable/ic_input_add"
-        android:onClick="addPerson" />
-
+        android:onClick="addPerson"
+        android:layout_weight="0.37" />
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
+        android:layout_width="265dp"
+        android:layout_height="31dp"
         android:text="Split"
         android:id="@+id/split_button"
         android:onClick="goToMain"
         android:layout_gravity="center"
-        android:background="@color/colorAccent"
-        android:layout_marginBottom="5dp"
-        />
+        android:background="@drawable/shape"
+        android:layout_marginBottom="5dp" />
 
 
     <Button
-        android:layout_width="384dp"
+        android:layout_width="263dp"
         android:layout_height="30dp"
         android:paddingTop="10dp"
-        android:text="Go Back"
+        android:text="Tool Box"
         android:id="@+id/gbm"
-        android:background="@color/grey"
+        android:background="@drawable/rounded_button"
         android:layout_gravity="center_horizontal"
-        android:onClick="B"
-        />
+        android:onClick="B" />
+
 
 </LinearLayout>

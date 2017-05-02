@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         Button buttonc= (Button) findViewById(R.id.b5);
         Button buttond= (Button) findViewById(R.id.b6);
 
-
+        Button buttonx= (Button) findViewById(R.id.b8);
         buttonc.setOnClickListener(new View.OnClickListener(){
             public void onClick(View arg0){
                 Intent startNewPage= new Intent(MainActivity.this, SetUp.class);
@@ -34,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        buttonx.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View arg0){
+                Intent startNewPage= new Intent(MainActivity.this, NewActivity.class);
+                startActivity (startNewPage);
+            }
+
+        });
+
 
         buttond.setOnClickListener(new View.OnClickListener(){
             public void onClick(View arg0){

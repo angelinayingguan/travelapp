@@ -99,6 +99,16 @@
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:background="@drawable/btnshape"/>
+        <Button
+            android:layout_width="205dp"
+            android:layout_height="30dp"
+            android:paddingTop="10dp"
+            android:text="Tool Box"
+            android:id="@+id/tbx"
+            android:onClick="g2"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.00" />
 
         <TextView
             android:layout_width="wrap_content"

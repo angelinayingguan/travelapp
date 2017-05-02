@@ -38,7 +38,6 @@ public class SpliterActivity extends AppCompatActivity implements Serializable{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_spliter);
-
         intent = getIntent();
         bill = (Bill)intent.getSerializableExtra("sendBill");
 
@@ -51,6 +50,14 @@ public class SpliterActivity extends AppCompatActivity implements Serializable{
             }
         });
 
+        Button f = (Button) findViewById(R.id.tbx);
+        f.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent startNewPage= new Intent(SpliterActivity.this, MainActivity.class);
+                startActivity (startNewPage);
+            }
+        });
         Button taxButton = (Button) findViewById(R.id.taxButton);
         taxButton.setOnClickListener(new View.OnClickListener() {
             @Override
